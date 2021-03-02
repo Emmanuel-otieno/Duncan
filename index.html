@@ -152,24 +152,26 @@
                 <div class="column-right">
                     <div class="text">Email me Directly</div>
                     <form id="form">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" id="name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" id="email" placeholder="Email" required>
-                            </div>
+                        <div class="field">
+                          <label for="to_name">to_name</label>
+                          <input type="text" name="to_name" id="to_name">
                         </div>
                         <div class="field">
-                            <input type="text" id="subject" placeholder="Subject" required>
+                          <label for="from_name">from_name</label>
+                          <input type="text" name="from_name" id="from_name">
                         </div>
-                        <div class="field textarea">
-                            <textarea name="" id="message" cols="30" rows="10" placeholder="Write message..."
-                                required></textarea>
+                        <div class="field">
+                          <label for="message">message</label>
+                          <input type="text" name="message" id="message">
                         </div>
-                        <div id="button">
-                            <button id="button" type="submit" value="Send Email" >Send message</button>
+                        <div class="field">
+                          <label for="reply_to">reply_to</label>
+                          <input type="text" name="reply_to" id="reply_to">
                         </div>
+                      
+                        <input type="submit" id="button" value="Send Email" >
+                      </form>
+                      
                     </form>
                 </div>
             </div>
