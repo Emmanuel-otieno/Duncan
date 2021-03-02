@@ -151,7 +151,7 @@
 
                 <div class="column-right">
                     <div class="text">Email me Directly</div>
-                    <form action="#">
+                    <form id="form">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" id="name" placeholder="Name" required>
@@ -167,8 +167,8 @@
                             <textarea name="" id="message" cols="30" rows="10" placeholder="Write message..."
                                 required></textarea>
                         </div>
-                        <div class="button">
-                            <button onclick="sendMail" type="submit">Send message</button>
+                        <div id="button">
+                            <button id="button" type="submit" value="Send Email" >Send message</button>
                         </div>
                     </form>
                 </div>
@@ -183,11 +183,11 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_7UxEEj04vFYdCfLOjIOZd");
-    })();
-    </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('user_7UxEEj04vFYdCfLOjIOZd')
+  </script>
 </body>
 </html>
