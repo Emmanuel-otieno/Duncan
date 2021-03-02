@@ -5,6 +5,16 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+  }
+
 html {
     scroll-behavior: smooth;
 }
